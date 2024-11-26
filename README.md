@@ -84,35 +84,53 @@ Eng PCs should be in VLAN 10, Sales PCs in VLAN 20
 
 ## Inter-VLAN Routing – Option 1 Separate Interfaces on Router
 
-13) Configure interface FastEthernet0/0 on R1 as the default gateway for the
-Eng PCs.
-14) Configure interface FastEthernet0/1 on R1 as the default gateway for the
-Sales PCs.
-15) Configure SW2 to support inter-VLAN routing using R1 as the default
-gateway.
+13) Configure interface FastEthernet0/0 on R1 as the default gateway for the Eng PCs.
+![image](https://github.com/user-attachments/assets/14888632-f62a-4701-a726-7089de957b66)
+
+14) Configure interface FastEthernet0/1 on R1 as the default gateway for the Sales PCs.
+![image](https://github.com/user-attachments/assets/8f885d35-3092-4b63-96bf-1f56b13da340)
+
+15) Configure SW2 to support inter-VLAN routing using R1 as the default gateway.
+![image](https://github.com/user-attachments/assets/fb93d2fd-0251-4875-8955-b302b426c748)
+![image](https://github.com/user-attachments/assets/8d70dd3f-7747-42aa-af44-dd740989d5c6)
+
 16) Verify the Eng1 PC has connectivity to the VLAN 20 interface on R1.
+![image](https://github.com/user-attachments/assets/7e9aa045-dfd0-4c4d-9dae-10e90beb6094)
+
 17) Verify the Eng1 PC has connectivity to Sales1.
+![image](https://github.com/user-attachments/assets/58c0c041-fba5-4572-a600-3609cf96ef57)
+
 18) Clean-up: Shut down interface FastEthernet0/1 on R1.
+![image](https://github.com/user-attachments/assets/e47ceb01-2096-4e39-88df-3a8ac918159a)
 
 ## Inter-VLAN Routing – Option 2 Router on a Stick
 
 
-19) Configure sub-interfaces on FastEthernet0/0 on R1 as the default
-gateway for the Eng and Sales PCs.
-20) Configure SW2 to support inter-VLAN routing using R1 as the default
-gateway.
-21) Verify the Eng1 PC has connectivity to the VLAN 20 interface on R1.
-22) Verify the Eng1 PC has connectivity to Sales1.
-23) Clean-up: Shut down interface FastEthernet0/0 on R1.
+19) Configure sub-interfaces on FastEthernet0/0 on R1 as the default gateway for the Eng and Sales PCs.
+![image](https://github.com/user-attachments/assets/c80db623-7062-46d1-a512-457389adf095)
 
+20) Configure SW2 to support inter-VLAN routing using R1 as the default gateway.
+![image](https://github.com/user-attachments/assets/ff7612d6-c754-4fc5-a27f-114425f4cb89)
+
+21) Verify the Eng1 PC has connectivity to the VLAN 20 interface on R1.
+![image](https://github.com/user-attachments/assets/90d7fef4-c86c-4278-a9d3-01e85d10feb7)
+
+22) Verify the Eng1 PC has connectivity to Sales1.
+![image](https://github.com/user-attachments/assets/81f11f31-95bf-4f6c-9d74-4c1825bb7dea)
+
+23) Clean-up: Shut down interface FastEthernet0/0 on R1.
+![image](https://github.com/user-attachments/assets/4e890b05-9088-4364-99b6-04d9690db5e0)
 
 ## Inter-VLAN Routing – Option 3 Layer 3 Switch
 
-24) Enable layer 3 routing on SW2.
-25) Configure SVIs on SW2 to support inter-VLAN routing between the Eng
-and Sales VLANs.
-26) Verify the Eng1 PC has connectivity to the VLAN 20 interface on SW2.
-27) Verify the Eng1 PC has connectivity to Sales1.
+24) Enable layer 3 routing on SW2 & Configure SVIs on SW2 to support inter-VLAN routing between the Eng and Sales VLANs.
+![image](https://github.com/user-attachments/assets/4f756b1c-e589-49e7-8920-74d1c191a0fd)
+
+25) Verify the Eng1 PC has connectivity to the VLAN 20 interface on SW2.
+![image](https://github.com/user-attachments/assets/5a87adf8-7e40-49d8-a3a9-de0eb1363601)
+
+26) Verify the Eng1 PC has connectivity to Sales1.
+![image](https://github.com/user-attachments/assets/24a95d31-52b2-4751-9036-a1efd59543e3)
 
 
 
